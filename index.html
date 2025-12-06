@@ -196,6 +196,14 @@
             transform: translateY(0);
         }
 
+                /* Ensure sections are visible on mobile if JS fails */
+        @media (max-width: 768px) {
+            section {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         .section-title {
             text-align: center;
             font-size: 2.5rem;
