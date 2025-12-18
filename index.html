@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,7 +42,7 @@
             backdrop-filter: blur(10px);
             z-index: 1000;
             padding: 1rem 0;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
         }
 
         nav .container {
@@ -86,7 +87,7 @@
         .hero {
             height: 100vh;
             background: linear-gradient(135deg, rgba(44, 24, 16, 0.8), rgba(139, 111, 71, 0.7)),
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%232c1810" width="1200" height="800"/></svg>');
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%232c1810" width="1200" height="800"/></svg>');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -107,7 +108,7 @@
         .hero h1 {
             font-size: 4rem;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
         }
 
         .hero h1 .mando {
@@ -196,12 +197,13 @@
             transform: translateY(0);
         }
 
-                /* Ensure sections are visible on mobile if JS fails */
+        /* Ensure sections are visible on mobile if JS fails */
         @media (max-width: 768px) {
             section {
                 opacity: 1;
                 transform: translateY(0);
             }
+
             .pdf-container {
                 display: none;
             }
@@ -231,7 +233,7 @@
         /* About Section */
         #about {
             background: linear-gradient(135deg, rgba(44, 24, 16, 0.8), rgba(139, 111, 71, 0.7)),
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%232c1810" width="1200" height="800"/></svg>');
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%232c1810" width="1200" height="800"/></svg>');
         }
 
         .about-content {
@@ -259,7 +261,7 @@
         /* Menu Section */
         #menu {
             background: linear-gradient(135deg, rgba(44, 24, 16, 0.8), rgba(139, 111, 71, 0.7)),
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%232c1810" width="1200" height="800"/></svg>');
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%232c1810" width="1200" height="800"/></svg>');
         }
 
         .menu-container {
@@ -273,14 +275,14 @@
             background: var(--bg-light);
             border-radius: 15px;
             padding: 2rem;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
         }
 
         .pdf-container {
             background: white;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
             margin-bottom: 1.5rem;
         }
 
@@ -336,7 +338,7 @@
         /* Hours Section */
         #hours {
             background: linear-gradient(135deg, rgba(44, 24, 16, 0.8), rgba(139, 111, 71, 0.7)),
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%232c1810" width="1200" height="800"/></svg>');
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%232c1810" width="1200" height="800"/></svg>');
         }
 
         .hours-grid {
@@ -345,7 +347,7 @@
             background: white;
             border-radius: 15px;
             padding: 3rem;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
         }
 
         .hours-row {
@@ -391,10 +393,20 @@
             font-size: 1.3rem;
         }
 
+        .phone-number a {
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+
+        .phone-number a:hover {
+            color: var(--secondary-color);
+        }
+
         /* Gallery Section */
-        #food-gallery, #venue-gallery {
+        #food-gallery,
+        #venue-gallery {
             background: linear-gradient(135deg, rgba(44, 24, 16, 0.8), rgba(139, 111, 71, 0.7)),
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%232c1810" width="1200" height="800"/></svg>');
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%232c1810" width="1200" height="800"/></svg>');
         }
 
         .gallery-grid {
@@ -410,7 +422,7 @@
             border-radius: 15px;
             aspect-ratio: 1;
             background: linear-gradient(135deg, #e0e0e0, #f5f5f5);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
         }
 
@@ -430,7 +442,7 @@
             padding: 2rem;
             border-radius: 15px;
             margin-top: 2rem;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         }
 
         .venue-info h3 {
@@ -456,7 +468,7 @@
         /* Impressum Section */
         #impressum {
             background: linear-gradient(135deg, rgba(44, 24, 16, 0.8), rgba(139, 111, 71, 0.7)),
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%232c1810" width="1200" height="800"/></svg>');
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%232c1810" width="1200" height="800"/></svg>');
             color: var(--text-light);
         }
 
@@ -511,16 +523,17 @@
 
         /* Mobile Styles */
         @media (max-width: 768px) {
-            
-        .mobile-logo img {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            display: block;
-        }
+
+            .mobile-logo img {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                display: block;
+            }
+
             .nav-links {
                 position: fixed;
                 right: -100%;
@@ -587,26 +600,27 @@
             }
         }
 
-.social-icon {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  background: #000;
-  border-radius: 50%;
-  margin: 5px;
-}
+        .social-icon {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background: #000;
+            border-radius: 50%;
+            margin: 5px;
+        }
 
-.social-icon img {
-  width: 96px;
-  height: 96px;
-  filter: invert(1); /* macht das Icon weiß */
-}
-
+        .social-icon img {
+            width: 96px;
+            height: 96px;
+            filter: invert(1);
+            /* macht das Icon weiß */
+        }
     </style>
     <link rel="icon" href="logo.jpg" type="image/jpeg">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
@@ -624,10 +638,10 @@
             </ul>
         </div>
     </nav>
-    
+
     <section id="logo-home" class="hero">
         <div class="mobile-logo">
-            <img src="Logo2.jpg" alt="Bürgerhaus Waldmohr Logo" >
+            <img src="Logo2.jpg" alt="Bürgerhaus Waldmohr Logo">
         </div>
     </section>
     <!-- Hero Section -->
@@ -635,7 +649,7 @@
         <div class="hero-content">
             <h1>Bürgerhaus Waldmohr<span class="mando">MANDO'S</span></h1>
             <p>Orientalische Spezialitäten von Mando's Family</p>
-            
+
             <div class="hero-info">
                 <div class="hero-info-item">
                     <div class="icon">📍</div>
@@ -645,23 +659,25 @@
                 <div class="hero-info-item">
                     <div class="icon">📞</div>
                     <div class="label">Reservierungen</div>
-                    <div class="value"><a href="tel:015127133942">0151 27133942</a></div>
-                    <div class="value"><a href="tel:063738289507">06373 8289507</a></div>
-                    
+                    <div class="value"><a href="tel:015127133942">0151 27133942</a> <br> <a
+                            href="tel:063738289507">06373 8289507</a></div>
                 </div>
             </div>
-            
+            <div class="hero-info-item">
+                <a href="mailto:events.buergerhaus@outlook.de">
+                    Email: events.buergerhaus@outlook.de
+                </a>
+            </div>
+            <br>
             <a href="#menu" class="cta-button">Unsere Speisekarte</a>
             <br>
             <br>
             <a href="https://www.instagram.com/buergerhaus.mandos" class="social-icon" target="_blank">
-            <img src="icons/instagram_1384015.png" 
-                alt="TikTok">
+                <img src="icons/instagram_1384015.png" alt="TikTok">
             </a>
 
             <a href="https://www.tiktok.com/@buergerhaus.mandos" class="social-icon" target="_blank">
-            <img src="icons/tiktok_3116491.png" 
-                alt="TikTok">
+                <img src="icons/tiktok_3116491.png" alt="TikTok">
             </a>
         </div>
         </div>
@@ -669,16 +685,23 @@
 
     <!-- About Section -->
     <section id="about">
-<div class="container">
-    <h2 class="section-title">Willkommen im Bürgerhaus Waldmohr</h2>
-    <div class="about-content">
-        <p>Herzlich willkommen im <span class="highlight">Bürgerhaus Waldmohr</span> – Ihrem Restaurant für authentische orientalische Spezialitäten im Herzen von Waldmohr!</p>
-        <p>Wir sind eine <span class="highlight">Familie</span>, die Sie mit köstlichen Gerichten aus dem Orient verwöhnt – zubereitet mit viel Liebe und den besten Zutaten. Unsere Küche verbindet traditionelle Rezepte mit modernen Einflüssen und sorgt so für ein einzigartiges Geschmackserlebnis.</p>
-        <p>Ob für einen gemütlichen Abend zu zweit, eine fröhliche Feier mit Freunden oder ein besonderes Event – bei uns sind Sie immer herzlich willkommen. Unsere Räumlichkeiten stehen Ihnen auch für private Feiern, Geburtstage, Trauerfeiern und Weihnachtsfeiern zur Verfügung.</p>
-        <p>Nach Absprache bieten wir Ihnen außerdem ein abwechslungsreiches <span class="highlight">Open Buffet</span>, das Ihre Feier zu einem besonderen kulinarischen Erlebnis macht.</p>
-        <p>Erleben Sie die herzliche Gastfreundschaft des Orients und genießen Sie unvergessliche kulinarische Momente im Bürgerhaus Waldmohr!</p>
-    </div>
-</div>
+        <div class="container">
+            <h2 class="section-title">Willkommen im Bürgerhaus Waldmohr</h2>
+            <div class="about-content">
+                <p>Herzlich willkommen im <span class="highlight">Bürgerhaus Waldmohr</span> – Ihrem Restaurant für
+                    authentische orientalische Spezialitäten im Herzen von Waldmohr!</p>
+                <p>Wir sind eine <span class="highlight">Familie</span>, die Sie mit köstlichen Gerichten aus dem Orient
+                    verwöhnt – zubereitet mit viel Liebe und den besten Zutaten. Unsere Küche verbindet traditionelle
+                    Rezepte mit modernen Einflüssen und sorgt so für ein einzigartiges Geschmackserlebnis.</p>
+                <p>Ob für einen gemütlichen Abend zu zweit, eine fröhliche Feier mit Freunden oder ein besonderes Event
+                    – bei uns sind Sie immer herzlich willkommen. Unsere Räumlichkeiten stehen Ihnen auch für private
+                    Feiern, Geburtstage, Trauerfeiern und Weihnachtsfeiern zur Verfügung.</p>
+                <p>Nach Absprache bieten wir Ihnen außerdem ein abwechslungsreiches <span class="highlight">Open
+                        Buffet</span>, das Ihre Feier zu einem besonderen kulinarischen Erlebnis macht.</p>
+                <p>Erleben Sie die herzliche Gastfreundschaft des Orients und genießen Sie unvergessliche kulinarische
+                    Momente im Bürgerhaus Waldmohr!</p>
+            </div>
+        </div>
     </section>
 
     <!-- Menu Section -->
@@ -693,18 +716,18 @@
                         Beispiel: "speisekarte.pdf" oder "https://ihre-domain.de/speisekarte.pdf"
                     -->
                     <div class="pdf-container">
-                        <iframe src="speisekarte1.pdf#toolbar=0&navpanes=0&scrollbar=1&view=FitH" 
-                                type="application/pdf"
-                                title="Speisekarte Ratskeller Waldmohr">
-                            <p>Ihr Browser unterstützt keine PDF-Anzeige. 
-                               <a href="speisekarte1.pdf" download>Bitte laden Sie die Speisekarte hier herunter.</a>
+                        <iframe src="speisekarte1.pdf#toolbar=0&navpanes=0&scrollbar=1&view=FitH" type="application/pdf"
+                            title="Speisekarte Ratskeller Waldmohr">
+                            <p>Ihr Browser unterstützt keine PDF-Anzeige.
+                                <a href="speisekarte1.pdf" download>Bitte laden Sie die Speisekarte hier herunter.</a>
                             </p>
                         </iframe>
                     </div>
-                    
+
                     <div class="pdf-controls">
                         <!-- Ersetzen Sie auch hier "HIER_IHR_PDF_LINK.pdf" -->
-                        <a href="speisekarte1.pdf" target="_blank" class="view-fullscreen-btn">📄 In neuem Tab öffnen</a>
+                        <a href="speisekarte1.pdf" target="_blank" class="view-fullscreen-btn">📄 In neuem Tab
+                            öffnen</a>
                         <!-- <a href="speisekarte1.pdf" download="Speisekarte-Ratskeller-Waldmohr.pdf" class="download-btn">📥 Speisekarte herunterladen</a> -->
                     </div>
                 </div>
@@ -747,7 +770,14 @@
                 </div>
                 <div class="reservation-info">
                     <p>Reservierungen unter:</p>
-                    <p class="phone-number">📞 015127133942</p>
+                    <p class="phone-number">
+                        Festnetz: <a href="tel:063738289507">06373-8289507</a><br>
+                        Mobile: <a href="tel:015127133942">01512-7133942</a><br>
+                        Email: <a href="mailto:events.buergerhaus@outlook.de">
+                            events.buergerhaus@outlook.de
+                        </a>
+                    </p>
+
                 </div>
             </div>
         </div>
@@ -764,77 +794,110 @@
                     <img src="Speisen/PHOTO-2025-10-01-18-57-31.jpg" alt="Orientalisches Gericht 2" loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (1).jpeg" alt="Orientalisches Gericht 3" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (1).jpeg" alt="Orientalisches Gericht 3"
+                        loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (16).jpeg" alt="Orientalisches Gericht 4" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (16).jpeg" alt="Orientalisches Gericht 4"
+                        loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (17).jpeg" alt="Orientalisches Gericht 5" loading="lazy">
+                    <img src="Speisen/essen2.jpg" alt="Orientalisches Gericht 5" loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (18).jpeg" alt="Orientalisches Gericht 6" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (18).jpeg" alt="Orientalisches Gericht 6"
+                        loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (19).jpeg" alt="Orientalisches Gericht 1" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (19).jpeg" alt="Orientalisches Gericht 1"
+                        loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (2).jpeg" alt="Orientalisches Gericht 2" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (2).jpeg" alt="Orientalisches Gericht 2"
+                        loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (20).jpeg" alt="Orientalisches Gericht 3" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (20).jpeg" alt="Orientalisches Gericht 3"
+                        loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (21).jpeg" alt="Orientalisches Gericht 4" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (21).jpeg" alt="Orientalisches Gericht 4"
+                        loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (22).jpeg" alt="Orientalisches Gericht 5" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (22).jpeg" alt="Orientalisches Gericht 5"
+                        loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (23).jpeg" alt="Orientalisches Gericht 6" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (23).jpeg" alt="Orientalisches Gericht 6"
+                        loading="lazy">
                 </div>
 
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (24).jpeg" alt="Orientalisches Gericht 5" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (24).jpeg" alt="Orientalisches Gericht 5"
+                        loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (25).jpeg" alt="Orientalisches Gericht 6" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (25).jpeg" alt="Orientalisches Gericht 6"
+                        loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (26).jpeg" alt="Orientalisches Gericht 1" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (26).jpeg" alt="Orientalisches Gericht 1"
+                        loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (27).jpeg" alt="Orientalisches Gericht 2" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (27).jpeg" alt="Orientalisches Gericht 2"
+                        loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (28).jpeg" alt="Orientalisches Gericht 3" loading="lazy">
+                    <img src="Speisen/essen3.jpg" alt="Orientalisches Gericht 3" loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (29).jpeg" alt="Orientalisches Gericht 4" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (29).jpeg" alt="Orientalisches Gericht 4"
+                        loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (3).jpeg" alt="Orientalisches Gericht 5" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (3).jpeg" alt="Orientalisches Gericht 5"
+                        loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (4).jpeg" alt="Orientalisches Gericht 6" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (4).jpeg" alt="Orientalisches Gericht 6"
+                        loading="lazy">
                 </div>
 
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (5).jpeg" alt="Orientalisches Gericht 5" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (5).jpeg" alt="Orientalisches Gericht 5"
+                        loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (6).jpeg" alt="Orientalisches Gericht 6" loading="lazy">
+                    <img src="Speisen/essen1.jpg" alt="Orientalisches Gericht 6" loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (7).jpeg" alt="Orientalisches Gericht 1" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (7).jpeg" alt="Orientalisches Gericht 1"
+                        loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (8).jpeg" alt="Orientalisches Gericht 2" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49 (8).jpeg" alt="Orientalisches Gericht 2"
+                        loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49.jpeg" alt="Orientalisches Gericht 3" loading="lazy">
+                    <img src="Speisen/WhatsApp Image 2025-09-15 at 18.34.49.jpeg" alt="Orientalisches Gericht 3"
+                        loading="lazy">
                 </div>
-            
+
+                <div class="gallery-item">
+                    <img src="Speisen/essen4.jpg" alt="Orientalisches Gericht 2" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="Speisen/essen5.jpg" alt="Orientalisches Gericht 3" loading="lazy">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Speisen/essen6.jpg" alt="Orientalisches Gericht 2" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="Speisen/essen7.jpg" alt="Orientalisches Gericht 3" loading="lazy">
+                </div>
             </div>
         </div>
     </section>
@@ -845,43 +908,56 @@
             <h2 class="section-title">Unsere Räumlichkeiten</h2>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="Rooms/WhatsApp Image 2025-09-15 at 18.34.49 (13).jpeg" alt="Festsaal Ansicht 1" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="Rooms/WhatsApp Image 2025-09-15 at 18.34.49 (14).jpeg" alt="Festsaal Ansicht 1" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="Rooms/WhatsApp Image 2025-09-15 at 18.34.49 (15).jpeg" alt="Festsaal Ansicht 1" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="Rooms/cache_15512332.png" alt="Festsaal Ansicht 2" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="Rooms/cache_15512339.jpg" alt="Festsaal Ansicht 3" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="Rooms/cache_8687304.jpg" alt="Festsaal Ansicht 4" loading="lazy">
-                </div>
-                <div class="gallery-item">
                     <img src="Rooms/cache_7351645.jpg" alt="Festsaal Ansicht 4" loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Rooms/WhatsApp Image 2025-09-15 at 18.34.49 (11).jpeg" alt="Festsaal Ansicht 4" loading="lazy">
+                    <img src="Rooms/WhatsApp Image 2025-09-15 at 18.34.49 (11).jpeg" alt="Festsaal Ansicht 4"
+                        loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="Rooms/room_1 (1).jpg" alt="Festsaal Ansicht 4" loading="lazy">
+                    <img src="Rooms/roomout1.jpg" alt="Festsaal Ansicht 4" loading="lazy">
                 </div>
                 <div class="gallery-item">
                     <img src="Rooms/room_1 (2).jpg" alt="Festsaal Ansicht 4" loading="lazy">
                 </div>
+                <div class="gallery-item">
+                    <img src="Rooms/WhatsApp Image 2025-09-15 at 18.34.49 (13).jpeg" alt="Festsaal Ansicht 1"
+                        loading="lazy">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Rooms/WhatsApp Image 2025-09-15 at 18.34.49 (14).jpeg" alt="Festsaal Ansicht 1"
+                        loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="Rooms/WhatsApp Image 2025-09-15 at 18.34.49 (15).jpeg" alt="Festsaal Ansicht 1"
+                        loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="Rooms/cache_15512332.png" alt="Festsaal Ansicht 2" loading="lazy">
+                </div>
+
+
+                <div class="gallery-item">
+                    <img src="Rooms/room_1 (1).jpg" alt="Festsaal Ansicht 4" loading="lazy">
+                </div>
+
                 <div class="gallery-item">
                     <img src="Rooms/room_1 (3).jpg" alt="Festsaal Ansicht 4" loading="lazy">
                 </div>
             </div>
             <div class="venue-info">
                 <h3>Festsaal für Ihre besonderen Anlässe</h3>
-                <p>Wir bieten unsere schönen Räumlichkeiten für private Feiern, Geburtstage, Trauerfeiern, Weihnachtsfeiern und alle möglichen Veranstaltungen an.</p>
-                <p>Weitere Informationen: <a href="https://www.waldmohr.de/leben-in-waldmohr/b%C3%BCrgerhaus-waldmohr/" target="_blank">www.waldmohr.de</a></p>
+                <p>
+                    Wir bieten unsere schönen Räumlichkeiten für private Feiern, Geburtstage,
+                    Trauerfeiern, Weihnachtsfeiern und viele weitere Veranstaltungen an.
+                </p>
+                <p>
+                    Für Reservierungen schreiben Sie uns bitte eine
+                    <a href="mailto:events.buergerhaus@outlook.de">E-Mail</a>
+                    und hinterlassen Ihren Namen sowie Ihre Telefonnummer. Alternativ können Sie uns auch telefonisch
+                    erreichen – die Kontaktdaten finden Sie auf der Startseite.
+                </p>
             </div>
         </div>
     </section>
@@ -902,9 +978,12 @@
                 <p>
                     Festnetz: <a href="tel:063738289507">06373-8289507</a><br>
                     Mobile: <a href="tel:015127133942">01512-7133942</a><br>
+                    Email: <a href="mailto:events.buergerhaus@outlook.de">
+                        events.buergerhaus@outlook.de
+                    </a>
                 </p>
                 <h3>Umsatzsteuer-ID</h3>
-                <p>Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>[Ihre USt-ID einfügen]</p>
+                <p>Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>74 136 095 887</p>
 
                 <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
                 <p>
@@ -914,11 +993,18 @@
                 </p>
 
                 <h3>Haftungsausschluss</h3>
-                <p><strong>Haftung für Inhalte:</strong> Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
-                <p><strong>Haftung für Links:</strong> Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.</p>
+                <p><strong>Haftung für Inhalte:</strong> Die Inhalte unserer Seiten wurden mit größter Sorgfalt
+                    erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine
+                    Gewähr übernehmen.</p>
+                <p><strong>Haftung für Links:</strong> Unser Angebot enthält Links zu externen Webseiten Dritter, auf
+                    deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine
+                    Gewähr übernehmen.</p>
 
                 <h3>Urheberrecht</h3>
-                <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+                <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem
+                    deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung
+                    außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors
+                    bzw. Erstellers.</p>
             </div>
         </div>
     </section>
@@ -984,4 +1070,5 @@
         });
     </script>
 </body>
+
 </html>
