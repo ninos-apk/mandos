@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://xn--brgerhaus-waldmohr-m6b.de/sitemap.xml
