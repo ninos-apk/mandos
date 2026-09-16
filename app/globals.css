@@ -882,6 +882,12 @@ footer p {
     display: none;
   }
 
+  .hero-content > .eyebrow,
+  .hero-content > h1,
+  .hero-content > .hero-copy {
+    display: none;
+  }
+
   .hero-actions .button {
     width: 100%;
   }
