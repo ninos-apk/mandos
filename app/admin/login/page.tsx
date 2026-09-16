@@ -5,6 +5,8 @@ import Link from "next/link";
 const errors: Record<string, string> = {
   config: "Supabase ist noch nicht konfiguriert. Tragen Sie zuerst die Umgebungsvariablen ein.",
   credentials: "E-Mail-Adresse oder Passwort ist nicht korrekt.",
+  connection: "Die Anmeldung ist gerade nicht erreichbar. Bitte prüfen Sie die Verbindung zu Supabase und versuchen Sie es erneut.",
+  auth: "Die Anmeldung konnte nicht abgeschlossen werden. Bitte prüfen Sie die Supabase-Konfiguration.",
   forbidden: "Dieses Konto besitzt keine Administratorrechte.",
 };
 

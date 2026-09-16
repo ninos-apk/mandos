@@ -3,9 +3,11 @@ import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { defaultData } from "../lib/default-data";
 import { createSupabaseAdminClient } from "../lib/supabase/admin";
+import { ensureSupabaseDns } from "../lib/supabase/resolve-dns";
 
 const force = process.argv.includes("--force");
 const supabase = createSupabaseAdminClient();
+await ensureSupabaseDns();
 const root = process.cwd();
 
 const { data: previousRun, error: runCheckError } = await supabase

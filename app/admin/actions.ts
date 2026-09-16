@@ -74,6 +74,8 @@ export async function loginAction(formData: FormData) {
   const email = field(formData, "email").trim().toLowerCase();
   const password = field(formData, "password");
   const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+  if (error?.status === 0) redirect("/admin/login?error=connection");
+  if (error && error.code !== "invalid_credentials") redirect("/admin/login?error=auth");
   if (error || !data.user) redirect("/admin/login?error=credentials");
 
   const { data: profile } = await supabase.from("profiles").select("role").eq("id", data.user.id).maybeSingle();

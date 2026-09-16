@@ -1,4 +1,5 @@
 import { createSupabaseAdminClient } from "../lib/supabase/admin";
+import { ensureSupabaseDns } from "../lib/supabase/resolve-dns";
 
 const email = process.env.INITIAL_ADMIN_EMAIL?.trim().toLowerCase();
 const password = process.env.INITIAL_ADMIN_PASSWORD;
@@ -8,8 +9,15 @@ if (!email || !password) {
 }
 
 const supabase = createSupabaseAdminClient();
+await ensureSupabaseDns();
 const { data: usersData, error: listError } = await supabase.auth.admin.listUsers({ perPage: 1000 });
-if (listError) throw listError;
+if (listError) {
+  if (listError.status === 0) {
+    const hostname = new URL(process.env.NEXT_PUBLIC_SUPABASE_URL!).hostname;
+    throw new Error(`Supabase unter ${hostname} ist nicht erreichbar. Prüfe Netzwerk, VPN und Firewall.`, { cause: listError });
+  }
+  throw listError;
+}
 
 let user = usersData.users.find((candidate) => candidate.email?.toLowerCase() === email);
 if (!user) {
